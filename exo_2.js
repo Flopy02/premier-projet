@@ -1,25 +1,20 @@
-//let fruits = ['pomme', 'banane', 'orange', 'fraise', 'mangue'];
-
-// Extraire une portion du tableau de l'indice 1 à l'indice 3 (l'indice de fin n'est pas inclus)
-//let slicedFruits = fruits.slice(1, 3);
-
-// Trouver l'indice de l'élément 'orange'
-//let index = fruits.indexOf('orange');
-
-//console.log(index); // Affiche: 2
-//console.log(slicedFruits); // Affiche: ['banane', 'orange']
-
 // Création de l'objet student
 const student = {
     name: "Marie",
-    age: 20,
-    courses: [], // Tableau vide
-    grade: "A",
-  
+    age: 21,
+    courses: [] // Tableau vide
 };
-student.age = 21;
 
+// Ajout des éléments au tableau 'courses' avec la méthode push
+student.courses.push("Math", "Physics", "Chemistry");
 
+// Utilisation de la méthode indexOf pour trouver l'index de "Physics"
+const physicsIndex = student.courses.indexOf("Physics");
+console.log("Index de Physics : ", physicsIndex);
 
-// Affichage de l'objet student dans la console
-console.log(student);
+// Utilisation de la méthode slice pour créer un nouveau tableau avec les deux premiers éléments
+const firstTwoCourses = student.courses.slice(0, 2);
+console.log("Les deux premiers cours : ", firstTwoCourses);
+
+// Affichage de l'objet student et des résultats dans la console
+console.log("Objet student : ", student);
